@@ -8,8 +8,8 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		final String checkin = "2016.04.08 12:30";
-		final String checkout = "2017.04.08 14:35";
+		final String checkin = "2017.04.08 12:30";
+		final String checkout = "2017.04.15 12:31";
 
 		try
 		{
@@ -37,7 +37,7 @@ public class Main
 		}
 		catch (DateTimeParseException exc)
 		{
-			System.err.printf("%s is not parsable!%n", checkin);
+			System.err.printf("%s is not parsable!\n", checkin);
 			throw exc;
 		}
 
@@ -49,7 +49,7 @@ public class Main
 		}
 		catch (DateTimeParseException exc)
 		{
-			System.err.printf("%s is not parsable!%n", incorrectInput);
+			System.err.printf("%s is not parsable!\n", incorrectInput);
 			throw exc;
 		}
 	}
